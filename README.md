@@ -22,7 +22,7 @@ The final bit of functionality the Show Assistant has is the ability to suggest 
 **info** - get info on a show or list all shows tracked by the program.<br>
 **toggle** - change the ‘watched’ of an episode.<br>
 **update** - updates the data with current information from the web.<br>
-*watchedFile** - populates the watched file with ‘true’ for every episode. (will be removed in later versions)<br>
+**watchedFile** - populates the watched file with ‘true’ for every episode. (will be removed in later versions)<br>
 **random** - get a random episode of a show.<br>
 
 ###4. How do the data files work
