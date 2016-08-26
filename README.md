@@ -53,7 +53,7 @@ ie. 'random Archer'
 ##Future Features:
 
 - implement ‘reminders’ command
-- implement toggle command
+
 - populate and allow the program to read and write to watched database
 - recommend a show that user has never seen before
 - store database of watched shows on a server so that the ‘watched?’ of a show is editable via smartphone
