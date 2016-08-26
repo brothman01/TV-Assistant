@@ -1,0 +1,686 @@
+Episode ID,watched
+COM1,TRUE
+COM2,TRUE
+COM3,TRUE
+COM4,TRUE
+COM5,TRUE
+COM6,TRUE
+COM7,TRUE
+COM8,TRUE
+COM9,TRUE
+COM10,TRUE
+COM11,TRUE
+COM12,TRUE
+COM13,TRUE
+COM14,TRUE
+COM15,TRUE
+COM16,TRUE
+COM17,TRUE
+COM18,TRUE
+COM19,TRUE
+COM20,TRUE
+COM21,TRUE
+COM22,TRUE
+COM23,TRUE
+COM24,TRUE
+COM25,TRUE
+COM26,TRUE
+COM27,TRUE
+COM28,TRUE
+COM29,TRUE
+COM30,TRUE
+COM31,TRUE
+COM32,TRUE
+COM33,TRUE
+COM34,TRUE
+COM35,TRUE
+COM36,TRUE
+COM37,TRUE
+COM38,TRUE
+COM39,TRUE
+COM40,TRUE
+COM41,TRUE
+COM42,TRUE
+COM43,TRUE
+COM44,TRUE
+COM45,TRUE
+COM46,TRUE
+COM47,TRUE
+COM48,TRUE
+COM49,TRUE
+COM50,TRUE
+COM51,TRUE
+COM52,TRUE
+COM53,TRUE
+COM54,TRUE
+COM55,TRUE
+COM56,TRUE
+COM57,TRUE
+COM58,TRUE
+COM59,TRUE
+COM60,TRUE
+COM61,TRUE
+COM62,TRUE
+COM63,TRUE
+COM64,TRUE
+COM65,TRUE
+COM66,TRUE
+COM67,TRUE
+COM68,TRUE
+COM69,TRUE
+COM70,TRUE
+COM71,TRUE
+COM72,TRUE
+COM73,TRUE
+COM74,TRUE
+COM75,TRUE
+COM76,TRUE
+COM77,TRUE
+COM78,TRUE
+COM79,TRUE
+COM80,TRUE
+COM81,TRUE
+COM82,TRUE
+COM83,TRUE
+COM84,TRUE
+COM85,TRUE
+COM86,TRUE
+COM87,TRUE
+COM88,TRUE
+COM89,TRUE
+COM90,TRUE
+COM91,TRUE
+COM92,TRUE
+COM93,TRUE
+COM94,TRUE
+COM95,TRUE
+COM96,TRUE
+COM97,TRUE
+COM<a id="latest"></a>Season 6,TRUE
+COM98,TRUE
+COM99,TRUE
+COM100,TRUE
+COM101,TRUE
+COM102,TRUE
+COM103,TRUE
+COM104,TRUE
+COM105,TRUE
+COM106,TRUE
+COM107,TRUE
+COM108,TRUE
+COM109,TRUE
+COM110,TRUE
+COM</pre>,TRUE
+COM</div>,TRUE
+COM<div id="botnavbar" class="NoPrint">,TRUE
+COM<table border="6" cellpadding="5" cellspacing="3">,TRUE
+COM<tr class="center">,TRUE
+COM<td><a href="#docTop">Back to<br />TOP</a></td>,TRUE
+COM<td class="TVmaze"><a target="_blank" href="http://www,TRUE
+COM<td class="TVmaze"><a target="_blank" href="http://www,TRUE
+COM<td class="TVmaze"><a href=",TRUE
+COM<td class="linkTXT"><a target="_blank" href="http://thefutoncritic,TRUE
+COM<td class="linkTXT"><a target="_blank" href="http://www,TRUE
+COM<td class="linkTXT"><a target="_blank" href="http://sharetv,TRUE
+COM<td class="linkTXT"><a target="_blank" href="http://www,TRUE
+COM<td class="linkTXT"><a target="_blank" href="http://www,TRUE
+COM<td class="linkTXT"><a target="_blank" href="https://en,TRUE
+COM			<td><a href=',TRUE
+COM			<td><a href=',TRUE
+COM			<td><a href=',TRUE
+COM</tr></table>,TRUE
+COM</div>,TRUE
+COM<hr />,TRUE
+COM<div id="notes">,TRUE
+COM<strong>NOTES</strong>,TRUE
+COM</div>,TRUE
+COM<p>&nbsp;</p>,TRUE
+COM<hr />,TRUE
+COM<div id="homenote">,TRUE
+COMThe home sites for this guide are ,TRUE
+COM<a href="http://epguides,TRUE
+COM<a href="http://www,TRUE
+COM<p>Contact Us: To correct episode titles click through the episode and submit corrections via the specific list provider,TRUE
+COM<a href="http://epguides,TRUE
+COM</div>,TRUE
+COM<hr />,TRUE
+COM<div id="footer" class="NoPrint">,TRUE
+COM<a target="_blank" href="http://www,TRUE
+COM<hr />,TRUE
+COM<div id="disclaimer" class="NoPrint">,TRUE
+COM    Disclaimer: We have no connection with the show or the network,TRUE
+COM    information, which we hope fans will find useful,TRUE
+COM    provided by external sites,TRUE
+COM<hr />,TRUE
+COM<div id="terms">,TRUE
+COM    This guide may be distributed and copied freely, in its entirety, for personal use,TRUE
+COM    All original author and copyright information must remain intact,TRUE
+COM    uses of this document are expressly forbidden, without the specific consent of the,TRUE
+COM    author(s),TRUE
+COM<hr />,TRUE
+COM<div id="copyright">,TRUE
+COMText Copyright &copy; 2009-2014, George Fergus,TRUE
+COM</div>,TRUE
+COM		<!-- Nothing here at the moment,TRUE
+COM</body>,TRUE
+COM</html>,TRUE
+ALP1,TRUE
+ALP2,TRUE
+ALP3,TRUE
+ALP4,TRUE
+ALP5,TRUE
+ALP6,TRUE
+ALP7,TRUE
+ALP8,TRUE
+ALP9,TRUE
+ALP10,TRUE
+ALP11,TRUE
+ALP<a id="latest"></a>Season 2,TRUE
+ALP12,TRUE
+ALP13,TRUE
+ALP14,TRUE
+ALP15,TRUE
+ALP16,TRUE
+ALP17,TRUE
+ALP18,TRUE
+ALP19,TRUE
+ALP20,TRUE
+ALP21,TRUE
+ALP22,TRUE
+ALP23,TRUE
+ALP24,TRUE
+ALP</pre>,TRUE
+ALP</div>,TRUE
+ALP<div id="botnavbar" class="NoPrint">,TRUE
+ALP<table border="6" cellpadding="5" cellspacing="3">,TRUE
+ALP<tr class="center">,TRUE
+ALP<td><a href="#docTop">Back to<br />TOP</a></td>,TRUE
+ALP<td class="TVmaze"><a target="_blank" href="http://www,TRUE
+ALP<td class="TVmaze"><a target="_blank" href="http://www,TRUE
+ALP<td class="TVmaze"><a href=",TRUE
+ALP<td class="linkTXT"><a target="_blank" href="http://thefutoncritic,TRUE
+ALP<td class="linkTXT"><a target="_blank" href="http://www,TRUE
+ALP<td class="linkTXT"><a target="_blank" href="http://sharetv,TRUE
+ALP<td class="linkTXT"><a target="_blank" href="http://www,TRUE
+ALP<td class="linkTXT"><a target="_blank" href="http://www,TRUE
+ALP<td class="linkTXT"><a target="_blank" href="https://en,TRUE
+ALP			<td><a href=',TRUE
+ALP			<td><a href=',TRUE
+ALP			<td><a href=',TRUE
+ALP</tr></table>,TRUE
+ALP</div>,TRUE
+ALP<hr />,TRUE
+ALP<div id="notes">,TRUE
+ALP<strong>NOTES</strong>,TRUE
+ALP</div>,TRUE
+ALP<p>&nbsp;</p>,TRUE
+ALP<hr />,TRUE
+ALP<div id="homenote">,TRUE
+ALPThe home sites for this guide are ,TRUE
+ALP<a href="http://epguides,TRUE
+ALP<a href="http://www,TRUE
+ALP<p>Contact Us: To correct episode titles click through the episode and submit corrections via the specific list provider,TRUE
+ALP<a href="http://epguides,TRUE
+ALP</div>,TRUE
+ALP<hr />,TRUE
+ALP<div id="footer" class="NoPrint">,TRUE
+ALP<a target="_blank" href="http://www,TRUE
+ALP<hr />,TRUE
+ALP<div id="disclaimer" class="NoPrint">,TRUE
+ALP    Disclaimer: We have no connection with the show or the network,TRUE
+ALP    information, which we hope fans will find useful,TRUE
+ALP    provided by external sites,TRUE
+ALP<hr />,TRUE
+ALP<div id="terms">,TRUE
+ALP    This guide may be distributed and copied freely, in its entirety, for personal use,TRUE
+ALP    All original author and copyright information must remain intact,TRUE
+ALP    uses of this document are expressly forbidden, without the specific consent of the,TRUE
+ALP    author(s),TRUE
+ALP<hr />,TRUE
+ALP<div id="copyright">,TRUE
+ALPText Copyright &copy; 2011, epguides,TRUE
+ALP</div>,TRUE
+ALP		<!-- Nothing here at the moment,TRUE
+ALP</body>,TRUE
+ALP</html>,TRUE
+AMD1,TRUE
+AMD2,TRUE
+AMD3,TRUE
+AMD4,TRUE
+AMD5,TRUE
+AMD6,TRUE
+AMD7,TRUE
+AMD8,TRUE
+AMD9,TRUE
+AMD10,TRUE
+AMD11,TRUE
+AMD12,TRUE
+AMD13,TRUE
+AMD14,TRUE
+AMD15,TRUE
+AMD16,TRUE
+AMD17,TRUE
+AMD18,TRUE
+AMD19,TRUE
+AMD20,TRUE
+AMD21,TRUE
+AMD22,TRUE
+AMD23,TRUE
+AMD24,TRUE
+AMD25,TRUE
+AMD26,TRUE
+AMD27,TRUE
+AMD28,TRUE
+AMD29,TRUE
+AMD30,TRUE
+AMD31,TRUE
+AMD32,TRUE
+AMD33,TRUE
+AMD34,TRUE
+AMD35,TRUE
+AMD36,TRUE
+AMD37,TRUE
+AMD38,TRUE
+AMD39,TRUE
+AMD40,TRUE
+AMD41,TRUE
+AMD42,TRUE
+AMD43,TRUE
+AMD44,TRUE
+AMD45,TRUE
+AMD46,TRUE
+AMD47,TRUE
+AMD48,TRUE
+AMD49,TRUE
+AMD50,TRUE
+AMD51,TRUE
+AMD52,TRUE
+AMD53,TRUE
+AMD54,TRUE
+AMD55,TRUE
+AMD56,TRUE
+AMD57,TRUE
+AMD58,TRUE
+AMD59,TRUE
+AMD60,TRUE
+AMD61,TRUE
+AMD62,TRUE
+AMD63,TRUE
+AMD64,TRUE
+AMD65,TRUE
+AMD66,TRUE
+AMD67,TRUE
+AMD68,TRUE
+AMD69,TRUE
+AMD70,TRUE
+AMD71,TRUE
+AMD72,TRUE
+AMD73,TRUE
+AMD74,TRUE
+AMD75,TRUE
+AMD76,TRUE
+AMD77,TRUE
+AMD78,TRUE
+AMD79,TRUE
+AMD80,TRUE
+AMD81,TRUE
+AMD82,TRUE
+AMD83,TRUE
+AMD84,TRUE
+AMD85,TRUE
+AMD86,TRUE
+AMD87,TRUE
+AMD88,TRUE
+AMD89,TRUE
+AMD90,TRUE
+AMD91,TRUE
+AMD92,TRUE
+AMD93,TRUE
+AMD94,TRUE
+AMD95,TRUE
+AMD96,TRUE
+AMD97,TRUE
+AMD98,TRUE
+AMD99,TRUE
+AMD100,TRUE
+AMD101,TRUE
+AMD102,TRUE
+AMD103,TRUE
+AMD104,TRUE
+AMD105,TRUE
+AMD106,TRUE
+AMD107,TRUE
+AMD108,TRUE
+AMD109,TRUE
+AMD110,TRUE
+AMD111,TRUE
+AMD112,TRUE
+AMD113,TRUE
+AMD114,TRUE
+AMD115,TRUE
+AMD116,TRUE
+AMD117,TRUE
+AMD118,TRUE
+AMD119,TRUE
+AMD120,TRUE
+AMD121,TRUE
+AMD122,TRUE
+AMD123,TRUE
+AMD124,TRUE
+AMD125,TRUE
+AMD126,TRUE
+AMD127,TRUE
+AMD128,TRUE
+AMD129,TRUE
+AMD130,TRUE
+AMD131,TRUE
+AMD132,TRUE
+AMD133,TRUE
+AMD134,TRUE
+AMD135,TRUE
+AMD136,TRUE
+AMD137,TRUE
+AMD138,TRUE
+AMD139,TRUE
+AMD140,TRUE
+AMD141,TRUE
+AMD142,TRUE
+AMD143,TRUE
+AMD144,TRUE
+AMD145,TRUE
+AMD146,TRUE
+AMD147,TRUE
+AMD148,TRUE
+AMD149,TRUE
+AMD150,TRUE
+AMD151,TRUE
+AMD152,TRUE
+AMD153,TRUE
+AMD154,TRUE
+AMD155,TRUE
+AMD156,TRUE
+AMD157,TRUE
+AMD158,TRUE
+AMD159,TRUE
+AMD160,TRUE
+AMD161,TRUE
+AMD162,TRUE
+AMD163,TRUE
+AMD164,TRUE
+AMD165,TRUE
+AMD166,TRUE
+AMD167,TRUE
+AMD168,TRUE
+AMD169,TRUE
+AMD170,TRUE
+AMD171,TRUE
+AMD172,TRUE
+AMD173,TRUE
+AMD174,TRUE
+AMD175,TRUE
+AMD176,TRUE
+AMD177,TRUE
+AMD178,TRUE
+AMD179,TRUE
+AMD180,TRUE
+AMD181,TRUE
+AMD182,TRUE
+AMD183,TRUE
+AMD184,TRUE
+AMD185,TRUE
+AMD186,TRUE
+AMD187,TRUE
+AMD188,TRUE
+AMD189,TRUE
+AMD190,TRUE
+AMD<a id="latest"></a>Season 12,TRUE
+AMD191,TRUE
+AMD192,TRUE
+AMD193,TRUE
+AMD194,TRUE
+AMD195,TRUE
+AMD196,TRUE
+AMD197,TRUE
+AMD198,TRUE
+AMD199,TRUE
+AMD200,TRUE
+AMD201,TRUE
+AMD202,TRUE
+AMD203,TRUE
+AMD204,TRUE
+AMD205,TRUE
+AMD206,TRUE
+AMD207,TRUE
+AMD208,TRUE
+AMD209,TRUE
+AMD210,TRUE
+AMD211,TRUE
+AMD212,TRUE
+AMD</pre>,TRUE
+AMD</div>,TRUE
+AMD<div id="botnavbar" class="NoPrint">,TRUE
+AMD<table border="6" cellpadding="5" cellspacing="3">,TRUE
+AMD<tr class="center">,TRUE
+AMD<td><a href="#docTop">Back to<br />TOP</a></td>,TRUE
+AMD<td class="TVmaze"><a target="_blank" href="http://www,TRUE
+AMD<td class="TVmaze"><a target="_blank" href="http://www,TRUE
+AMD<td class="TVmaze"><a href=",TRUE
+AMD<td class="linkTXT"><a target="_blank" href="http://thefutoncritic,TRUE
+AMD<td class="linkTXT"><a target="_blank" href="http://www,TRUE
+AMD<td class="linkTXT"><a target="_blank" href="http://sharetv,TRUE
+AMD<td class="linkTXT"><a target="_blank" href="http://www,TRUE
+AMD<td class="linkTXT"><a target="_blank" href="http://www,TRUE
+AMD<td class="linkTXT"><a target="_blank" href="https://en,TRUE
+AMD<td class="linkVID"><a target="_blank" href="http://www,TRUE
+AMD<td class="linkVID"><a target="_blank" href="http://itunes,TRUE
+AMD			<td><a href=',TRUE
+AMD			<td><a href=',TRUE
+AMD			<td><a href=',TRUE
+AMD</tr></table>,TRUE
+AMD</div>,TRUE
+AMD<hr />,TRUE
+AMD<div id="notes">,TRUE
+AMD<strong>NOTES</strong>,TRUE
+AMD<br />Earlier TV Club reviews are <a href="http://www,TRUE
+AMD</div>,TRUE
+AMD<p>&nbsp;</p>,TRUE
+AMD<hr />,TRUE
+AMD<div id="homenote">,TRUE
+AMDThe home sites for this guide are ,TRUE
+AMD<a href="http://epguides,TRUE
+AMD<a href="http://www,TRUE
+AMD<p>Contact Us: To correct episode titles click through the episode and submit corrections via the specific list provider,TRUE
+AMD<a href="http://epguides,TRUE
+AMD</div>,TRUE
+AMD<hr />,TRUE
+AMD<div id="footer" class="NoPrint">,TRUE
+AMD<a target="_blank" href="http://www,TRUE
+AMD<hr />,TRUE
+AMD<div id="disclaimer" class="NoPrint">,TRUE
+AMD    Disclaimer: We have no connection with the show or the network,TRUE
+AMD    information, which we hope fans will find useful,TRUE
+AMD    provided by external sites,TRUE
+AMD<hr />,TRUE
+AMD<div id="terms">,TRUE
+AMD    This guide may be distributed and copied freely, in its entirety, for personal use,TRUE
+AMD    All original author and copyright information must remain intact,TRUE
+AMD    uses of this document are expressly forbidden, without the specific consent of the,TRUE
+AMD    author(s),TRUE
+AMD<hr />,TRUE
+AMD<div id="copyright">,TRUE
+AMDText Copyright &copy; 2005-2016, epguides,TRUE
+AMD</div>,TRUE
+AMD		<!-- Nothing here at the moment,TRUE
+AMD</body>,TRUE
+AMD</html>,TRUE
+ARC1,TRUE
+ARC2,TRUE
+ARC3,TRUE
+ARC4,TRUE
+ARC5,TRUE
+ARC6,TRUE
+ARC7,TRUE
+ARC8,TRUE
+ARC9,TRUE
+ARC10,TRUE
+ARC11,TRUE
+ARC12,TRUE
+ARC13,TRUE
+ARC14,TRUE
+ARC15,TRUE
+ARC16,TRUE
+ARC17,TRUE
+ARC18,TRUE
+ARC19,TRUE
+ARC20,TRUE
+ARC21,TRUE
+ARC22,TRUE
+ARC23,TRUE
+ARC24,TRUE
+ARC25,TRUE
+ARC26,TRUE
+ARC27,TRUE
+ARC28,TRUE
+ARC29,TRUE
+ARC30,TRUE
+ARC31,TRUE
+ARC32,TRUE
+ARC33,TRUE
+ARC34,TRUE
+ARC35,TRUE
+ARC36,TRUE
+ARC37,TRUE
+ARC38,TRUE
+ARC39,TRUE
+ARC40,TRUE
+ARC41,TRUE
+ARC42,TRUE
+ARC43,TRUE
+ARC44,TRUE
+ARC45,TRUE
+ARC46,TRUE
+ARC47,TRUE
+ARC48,TRUE
+ARC49,TRUE
+ARC50,TRUE
+ARC51,TRUE
+ARC52,TRUE
+ARC53,TRUE
+ARC54,TRUE
+ARC55,TRUE
+ARC56,TRUE
+ARC57,TRUE
+ARC58,TRUE
+ARC59,TRUE
+ARC60,TRUE
+ARC61,TRUE
+ARC62,TRUE
+ARC63,TRUE
+ARC64,TRUE
+ARC65,TRUE
+ARC66,TRUE
+ARC67,TRUE
+ARC68,TRUE
+ARC69,TRUE
+ARC70,TRUE
+ARC71,TRUE
+ARC72,TRUE
+ARC73,TRUE
+ARC74,TRUE
+ARC75,TRUE
+ARC<a id="latest"></a>Season 7,TRUE
+ARC76,TRUE
+ARC77,TRUE
+ARC78,TRUE
+ARC79,TRUE
+ARC80,TRUE
+ARC81,TRUE
+ARC82,TRUE
+ARC83,TRUE
+ARC84,TRUE
+ARC85,TRUE
+UGA1,TRUE
+UGA2,TRUE
+UGA3,TRUE
+UGA4,TRUE
+UGA5,TRUE
+UGA6,TRUE
+UGA7,TRUE
+UGA8,TRUE
+UGA9,TRUE
+UGA10,TRUE
+UGA11,TRUE
+UGA12,TRUE
+UGA13,TRUE
+UGA14,TRUE
+UGA<a id="latest"></a>Season 2,TRUE
+UGA15,TRUE
+UGA16,TRUE
+UGA17,TRUE
+UGA18,TRUE
+UGA19,TRUE
+UGA20,TRUE
+UGA21,TRUE
+UGA22,TRUE
+UGA23,TRUE
+UGA24,TRUE
+UGA25,TRUE
+UGA26,TRUE
+UGA27,TRUE
+UGA28,TRUE
+UGA29,TRUE
+UGA30,TRUE
+UGA31,TRUE
+UGA</pre>,TRUE
+UGA</div>,TRUE
+UGA<div id="botnavbar" class="NoPrint">,TRUE
+UGA<table border="6" cellpadding="5" cellspacing="3">,TRUE
+UGA<tr class="center">,TRUE
+UGA<td><a href="#docTop">Back to<br />TOP</a></td>,TRUE
+UGA<td class="TVmaze"><a target="_blank" href="http://www,TRUE
+UGA<td class="TVmaze"><a target="_blank" href="http://www,TRUE
+UGA<td class="TVmaze"><a href=",TRUE
+UGA<td class="linkTXT"><a target="_blank" href="http://thefutoncritic,TRUE
+UGA<td class="linkTXT"><a target="_blank" href="http://www,TRUE
+UGA<td class="linkTXT"><a target="_blank" href="http://sharetv,TRUE
+UGA<td class="linkTXT"><a target="_blank" href="http://www,TRUE
+UGA<td class="linkTXT"><a target="_blank" href="https://en,TRUE
+UGA			<td><a href=',TRUE
+UGA			<td><a href=',TRUE
+UGA			<td><a href=',TRUE
+UGA</tr></table>,TRUE
+UGA</div>,TRUE
+UGA<hr />,TRUE
+UGA<div id="notes">,TRUE
+UGA<strong>NOTES</strong>,TRUE
+UGA</div>,TRUE
+UGA<p>&nbsp;</p>,TRUE
+UGA<hr />,TRUE
+UGA<div id="homenote">,TRUE
+UGAThe home sites for this guide are ,TRUE
+UGA<a href="http://epguides,TRUE
+UGA<a href="http://www,TRUE
+UGA<p>Contact Us: To correct episode titles click through the episode and submit corrections via the specific list provider,TRUE
+UGA<a href="http://epguides,TRUE
+UGA</div>,TRUE
+UGA<hr />,TRUE
+UGA<div id="footer" class="NoPrint">,TRUE
+UGA<a target="_blank" href="http://www,TRUE
+UGA<hr />,TRUE
+UGA<div id="disclaimer" class="NoPrint">,TRUE
+UGA    Disclaimer: We have no connection with the show or the network,TRUE
+UGA    information, which we hope fans will find useful,TRUE
+UGA    provided by external sites,TRUE
+UGA<hr />,TRUE
+UGA<div id="terms">,TRUE
+UGA    This guide may be distributed and copied freely, in its entirety, for personal use,TRUE
+UGA    All original author and copyright information must remain intact,TRUE
+UGA    uses of this document are expressly forbidden, without the specific consent of the,TRUE
+UGA    author(s),TRUE
+UGA<hr />,TRUE
+UGA<div id="copyright">,TRUE
+UGAText Copyright &copy; 2009-2012, epguides,TRUE
+UGA</div>,TRUE
+UGA		<!-- Nothing here at the moment,TRUE
+UGA</body>,TRUE
+UGA</html>,TRUE

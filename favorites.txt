@@ -1,0 +1,6 @@
+#title#[genre(s)]#[URL]#[show code]
+Community[Comedy][http://www.epguides.com/community][COM]
+Alphas[Comedy,Scifi][http://www.epguides.com/Alphas][ALP]
+AmericanDad![Comedy,Animated][http://epguides.com/AmericanDad/][AMD]
+Archer[Comedy,Animated][http://www.epguides.com/Archer][ARC]
+UglyAmericans[Animated,Comedy][http://epguides.com/UglyAmericans/][UGA]
