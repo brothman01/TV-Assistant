@@ -1,4 +1,5 @@
-# Show Assistant - Ben Rothman
+# TV Assistant
+## By Ben Rothman
 
 
 
