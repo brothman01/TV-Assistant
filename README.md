@@ -34,7 +34,7 @@ If you want to add to or change the shows that this program displays info about 
 
 Q. I am trying to pass in the name of a show but the program is not finding it, what is wrong?
 
-A. The program does not take spaces in show names.  Use camel case instead of spaces in the names of shows. i.e. UglyAmericans
+A. The program does not take spaces in show names.  Use camel case instead of spaces in the names of shows.<br>i.e. UglyAmericans
 
 Q. How should a 'toggle' command be structured?
 
