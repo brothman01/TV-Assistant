@@ -25,7 +25,7 @@ The final bit of functionality the Show Assistant has is the ability to suggest 
 ‘watchedFile’ - populates the watched file with ‘true’ for every episode.
 ‘random’ - get a random episode of a show
 
-5. How do the data files work
+###4. How do the data files work
 There are two main ways that the program gets data about your favorite shows: from the local data file and from the web.  Obviously the web has more current and complete data available about each show, but the local data file allows the user to customize the program to perform whatever checks they want.
 
 If you want to add to or change the shows that this program displays info about then put the changes in this file and the program will reflect those changes.
