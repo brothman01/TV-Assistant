@@ -18,12 +18,12 @@ The final bit of functionality the Show Assistant has is the ability to suggest 
 
 ###3. Command Reference:
 **reminders** - Get reminders to watch episodes that have already aired but that have not been watched.<br>
-**list** - lists all of the available commands
-**info** - get info on a show or list all shows tracked by the program
-**toggle** - change the ‘watched’ of an episode
-**update** - updates the data with current information from the web.
-*watchedFile** - populates the watched file with ‘true’ for every episode. (will be removed in later versions)
-**random** - get a random episode of a show
+**list** - lists all of the available commands<br>
+**info** - get info on a show or list all shows tracked by the program.<br>
+**toggle** - change the ‘watched’ of an episode.<br>
+**update** - updates the data with current information from the web.<br>
+*watchedFile** - populates the watched file with ‘true’ for every episode. (will be removed in later versions)<br>
+**random** - get a random episode of a show.<br>
 
 ###4. How do the data files work
 There are two main ways that the program gets data about your favorite shows: from the local data file and from the web.  Obviously the web has more current and complete data available about each show, but the local data file allows the user to customize the program to perform whatever checks they want.
@@ -36,10 +36,15 @@ Q. I am trying to pass in the name of a show but the program is not finding it, 
 
 A. The program does not take spaces in show names.  Use camel case instead of spaces in the names of shows. i.e. UglyAmericans
 
-Q. How should a toggle command be structured?
+Q. How should a 'toggle' command be structured?
 
 A. ’toggle show name seasonnumberxepisodenumber
 i.e.:'toggle Archer 3x22'
+
+Q. How Should a 'random' command be structured?
+
+A. random showname
+ie. 'random Archer'
 
 
 
