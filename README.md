@@ -7,14 +7,6 @@
 # Show Assistant - Ben Rothman
 
 
-[![WordPress plugin](https://img.shields.io/wordpress/plugin/v/timeline-express.svg?style=flat-square)](https://wordpress.org/plugins/timeline-express/)
-[![WordPress](https://img.shields.io/wordpress/v/timeline-express.svg?style=flat-square)](https://wordpress.org/plugins/timeline-express/)
-[![WordPress](https://img.shields.io/wordpress/plugin/dt/timeline-express.svg?style=flat-square)](https://wordpress.org/plugins/timeline-express/)
-[![WordPress rating](https://img.shields.io/wordpress/plugin/r/timeline-express.svg?style=flat-square)](https://wordpress.org/support/plugin/timeline-express)
-
-
-
-
 
 
 1. What is the Show Assistant
