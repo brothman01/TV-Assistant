@@ -4,17 +4,15 @@
 [![Build Status](https://scrutinizer-ci.com/g/EvanHerman/Timeline-Express/badges/build.png?b=Refactor---v1.2)](https://scrutinizer-ci.com/g/EvanHerman/Timeline-Express/build-status/Refactor---v1.2)
 [![Project Stats](https://www.openhub.net/p/timeline-express/widgets/project_thin_badge.gif)](https://www.openhub.net/p/timeline-express)
 
-# Timeline Express - v1.2.8.4
-This repository is a re-factor of the original code base.
+# Show Assistant - Ben Rothman
+
 
 [![WordPress plugin](https://img.shields.io/wordpress/plugin/v/timeline-express.svg?style=flat-square)](https://wordpress.org/plugins/timeline-express/)
 [![WordPress](https://img.shields.io/wordpress/v/timeline-express.svg?style=flat-square)](https://wordpress.org/plugins/timeline-express/)
 [![WordPress](https://img.shields.io/wordpress/plugin/dt/timeline-express.svg?style=flat-square)](https://wordpress.org/plugins/timeline-express/)
 [![WordPress rating](https://img.shields.io/wordpress/plugin/r/timeline-express.svg?style=flat-square)](https://wordpress.org/support/plugin/timeline-express)
 
-                                   #Show Assistant
 
-                                 Author: Ben Rothman
 
 
 
