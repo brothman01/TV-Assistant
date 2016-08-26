@@ -7,11 +7,13 @@
 
 The Show Assistant is a tracker for all the shows you watch.  There are three main functions the program performs: 1) Tracking/Reminders, 2) Keeping track of which episodes you already watched and which you have yet to watch, and 3) getting a random episode of a show to watch.  The program gets season and episode data on your favorite shows (those listed in the ’favorites.txt’ file) from the internet and tells you which days to watch each show.
 
-Part of the data stored in the program is whether or not you have watched an episode.  Using the ’toggle’ command you can tell the program which episodes you have already watched so that you will not be reminded to watch it.
+The program stores whether or not you have watched an episode.  Using the ’toggle’ command you can tell the program which episodes you have already watched so that you will not be reminded to watch it again.
 
-The final bit of functionality the Show Assistant has is the ability to suggest a random episode from a random season of a show.
+The final bit of functionality the TV Assistant has is the ability to suggest a random episode from a random season of a show.  Just use the 'random' command and specify which show to get the episode from.
 
-###2. How to run Show Assistant from the terminal
+The TV Assistant was made to be a terminal program, but it can be run from any IDE that accepts Java and has input and output streams.
+
+###2. How to run TV Assistant from the terminal
 
 	1. cd to the folder contains the TVAssistant files
 	2. $ java TVAssistant
