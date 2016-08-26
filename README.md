@@ -13,7 +13,7 @@ The final bit of functionality the Show Assistant has is the ability to suggest 
 
 ###2. How to run Show Assistant from the terminal
 
-	1. cd to the folder contains the shoeAssistant files
+	1. cd to the folder contains the TVAssistant files
 	2. $ java TVAssistant
 
 ###3. Command Reference:
