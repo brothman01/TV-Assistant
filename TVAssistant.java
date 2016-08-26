@@ -9,10 +9,6 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.MalformedURLException;
 
-/*
-WHY IS THE LAST SEASON OF EVERY SHOW NOT BEING WRITTEN?
-*/
-
 public class TVAssistant
 {
   private File favoritesFile = new File("favorites.txt"); // file containing the users favorites/preferences for what the program will search for
