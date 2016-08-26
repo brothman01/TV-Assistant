@@ -17,7 +17,7 @@ The final bit of functionality the Show Assistant has is the ability to suggest 
 	2. $ java TVAssistant
 
 ###3. Command Reference:
-**reminders** - Get reminders to watch episodes that have already aired but that have not been watched.
+**reminders** - Get reminders to watch episodes that have already aired but that have not been watched.<br>
 **list** - lists all of the available commands
 **info** - get info on a show or list all shows tracked by the program
 **toggle** - change the ‘watched’ of an episode
