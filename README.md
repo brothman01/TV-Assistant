@@ -51,10 +51,7 @@ ie. 'random Archer'
 
 
 ##Future Features:
-
 - implement ‘reminders’ command
-
-- populate and allow the program to read and write to watched database
 - recommend a show that user has never seen before
 - store database of watched shows on a server so that the ‘watched?’ of a show is editable via smartphone
 - use of the rules in the ‘rule.txt’ file in randomization
