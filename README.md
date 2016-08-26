@@ -3,8 +3,7 @@
 
 
 
-
-1. What is the Show Assistant
+###1. What is the Show Assistant
 
 The Show Assistant is a tracker for all the shows you watch.  There are three main functions the program performs: 1) Tracking/Reminders, 2) Keeping track of which episodes you already watched and which you have yet to watch, and 3) getting a random episode of a show to watch.  The program gets season and episode data on your favorite shows (those listed in the ’favorites.txt’ file) from the internet and tells you which days to watch each show.
 
@@ -12,12 +11,12 @@ Part of the data stored in the program is whether or not you have watched an epi
 
 The final bit of functionality the Show Assistant has is the ability to suggest a random episode from a random season of a show.
 
-2. How to run Show Assistant from the terminal
+###2. How to run Show Assistant from the terminal
 
 	1. cd to the folder contains the shoeAssistant files
 	2. $ java TVAssistant
 
-4. Command Reference:
+###3. Command Reference:
 ‘reminders’ - Get reminders to watch episodes that have already aired but that have not been watched.
 ‘list’ - lists all of the available commands
 ‘info’ - get info on a show or list all shows tracked by the program
@@ -31,7 +30,7 @@ There are two main ways that the program gets data about your favorite shows: fr
 
 If you want to add to or change the shows that this program displays info about then put the changes in this file and the program will reflect those changes.
 
-FAQ:
+##FAQ:
 
 Q. I am trying to pass in the name of a show but the program is not finding it, what is wrong?
 
@@ -43,11 +42,8 @@ A. ’toggle show name seasonnumberxepisodenumber
 i.e.:'toggle Archer 3x22'
 
 
-————————————————
 
-Future Features:
-
-————————————————
+##Future Features:
 
 - implement ‘reminders’ command
 - implement toggle command
