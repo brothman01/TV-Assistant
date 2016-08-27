@@ -1,3 +1,12 @@
+/*
+ * Title: TV Assistant
+ * Author: Ben Rothman
+ * Author URL: www.BenRothman.org
+ * Release Date: 8/26/16
+ * Version: 0.1 (alpha)
+ * description: Tracks data for all shows listed in the favorites file of each user
+*/
+
 import java.io.*;
 import java.net.URL;
 import java.util.*;
@@ -53,7 +62,7 @@ public class TVAssistant
      
      
   }
-  // get the user's input entered into the inputstream
+  // get the user's input entered into the inputstream (magic)
   public String GetUserInput() 
   {
         String cmd = "";
@@ -173,7 +182,7 @@ public class TVAssistant
     String code = "";
     
     Show theShow = new Show("");
-    Season theSeason = new Season(0, "");
+    Season theSeason = new Season(0, "", "");
     Episode theEp = new Episode("", "");
     
     // toggle Archer 3x22
@@ -345,7 +354,7 @@ public class TVAssistant
         System.out.println("Season " + ((show.seasons).get(x)).seasonNumber + ": " + (((show.seasons).get(x)).episodes).size() + " episodes");
       }
 
-      System.out.println((show.seasons).get(0)); // DEBUG
+      System.out.println("S2 raw content:\n" + (show.seasons.get(2)).raw_content); // DEBUG
       
   }
   
@@ -396,7 +405,7 @@ class Show {
   
   private static boolean WRITER = false; // when true, writes the current line of the crawled site content to 'webContent'
   
-  private String raw_content = ""; // info from the web after it has been made readable
+  public String raw_content = ""; // info from the web after it has been made readable
  
   public String showCode = "";
   
@@ -431,7 +440,50 @@ class Show {
     } catch (Exception e) {}
     
     // set this shows raw_content to everything read from the page
+    String[] raw_lines = html.split("\n");
     raw_content = html;
+    
+    String content = "";
+    String lines = "";
+    String final_lines = "";
+    WRITER = false;
+    
+    // GET EACH SEASON BY ITSELF AND PASS IT TO THE SEASON OBJECT
+
+    
+    int whichSeason = 0;    
+    seasons.clear();
+    Season season = new Season(whichSeason, showCode, html);
+    
+    for (String line : raw_lines) {
+
+        Pattern regex = Pattern.compile("Season ([0-9])"); // regular expression to find
+    
+        Matcher searchString = regex.matcher(line); // create a 'Matcher' and pass the regex to find as the parameter to the 'matcher' function
+        
+        if (searchString.find()) {
+          whichSeason++;
+          seasons.add(season);
+          season = new Season(whichSeason, showCode, html);
+        }
+        
+        if ((line.contains("NoPrint"))) {
+          seasons.add(season); // add the last season
+          return;
+        }
+        
+    }
+    
+    
+    
+    try {
+      
+      if ( (seasons.get(0)).seasonNumber == 0) {
+        seasons.remove(0); // remove the 0th season
+      }
+      
+    } catch (Exception e) {}
+
 
   }
   
@@ -507,7 +559,7 @@ class Show {
     
     seasons.clear();
     
-    Season season = new Season(-1, showCode);
+    Season season = new Season(-1, showCode, "");
     
     for (String line : raw_lines) {
 
@@ -515,13 +567,19 @@ class Show {
     
         Matcher searchString = regex.matcher(line); // create a 'Matcher' and pass the regex to find as the parameter to the 'matcher' function
         
-        if (searchString.find()) {
+        if (searchString.find() || line.startsWith("<a id=\"latest\"></a>")) {
           season.raw_content = content;
           content = "";
           WRITER = true;
           whichSeason++;
           seasons.add(season);
-          season = new Season(whichSeason, showCode);
+          season = new Season(whichSeason, showCode, "");
+        }
+        
+        if ((line.contains("NoPrint"))) {
+          seasons.add(season); // add the last season
+          WRITER = false;
+          return;
         }
                 
         if (WRITER) {
@@ -536,7 +594,7 @@ class Show {
         
     }
     
-    seasons.add(season); // add the last season
+    
     
     try {
       
@@ -556,15 +614,35 @@ class Season {
   public ArrayList<Episode> episodes = new ArrayList<Episode>();
   public String raw_content = "";
   public String showCode = "";
- 
-  public Season(int num, String code) {
+  private boolean WRITER = false;
+  
+  public Season(int num, String code, String html) {
     seasonNumber = num;
     showCode = code;
+    raw_content = html;
+    
+    String seasonNumberString = "Season " + seasonNumber;
+    String nextSeasonNumberString = "Season " + (seasonNumber + 1);
 
-    String[] temp = raw_content.split("\n");
+    String[] temp = html.split("\n");
     String lines = "";
+    
     for (int x = 2; x < temp.length; x++) {
-      lines += temp[x] + "\n";
+      String line = temp[x];
+      
+      if (line.contains(seasonNumberString)) {
+        WRITER = true;
+      }
+      
+      if (line.contains(nextSeasonNumberString)) {
+        WRITER = false;
+        break;
+      }
+          
+      if (WRITER) {
+        lines += temp[x] + "\n";
+      }
+      
     }
     
     raw_content = lines + "\n";
