@@ -120,6 +120,7 @@ public class TVAssistant
       
     
     } else if (cmd.startsWith("watchedFile")) {
+      System.out.println("Writing to the watched database file.");
       // populate watched
       String output = "Episode ID,watched\n";
       for (Show show : allShowsWithData) {
@@ -351,10 +352,9 @@ public class TVAssistant
     System.err.println("Showcode: " + show.showCode); // print the showcode
     
       for (int x = 1; x < (show.seasons).size(); x++) {
-        System.out.println("Season " + ((show.seasons).get(x)).seasonNumber + ": " + (((show.seasons).get(x)).episodes).size() + " episodes");
+        System.err.println("Season " + ((show.seasons).get(x)).seasonNumber + ": " + (((show.seasons).get(x)).episodes).size() + " episodes");
       }
 
-      System.out.println("S2 raw content:\n" + (show.seasons.get(2)).raw_content); // DEBUG
       
   }
   
@@ -483,8 +483,7 @@ class Show {
       }
       
     } catch (Exception e) {}
-
-
+    
   }
   
   // print the title of the show
@@ -567,7 +566,7 @@ class Show {
     
         Matcher searchString = regex.matcher(line); // create a 'Matcher' and pass the regex to find as the parameter to the 'matcher' function
         
-        if (searchString.find() || line.startsWith("<a id=\"latest\"></a>")) {
+        if (searchString.find()) {
           season.raw_content = content;
           content = "";
           WRITER = true;
@@ -584,7 +583,7 @@ class Show {
                 
         if (WRITER) {
           
-          if (!line.startsWith("Season ") && !line.equals("") && line != null) {
+          if (!line.startsWith("Season ") && !line.equals("") && line != null &! line.contains("id=\"latest") &! line.contains("pre>") &! line.contains("div>")) { // stop bug episodes from being added
             content += line + "\n";
             Episode ep = new Episode(line, showCode);
             season.addEpisode(ep);
@@ -640,12 +639,15 @@ class Season {
       }
           
       if (WRITER) {
+
+        
+        
         lines += temp[x] + "\n";
       }
       
     }
     
-    raw_content = lines + "\n";
+    //raw_content = lines + "\n";
 
   }
   
@@ -741,6 +743,8 @@ class Episode {
         
     // get the episode code
     epCode = showCode + epCode;
+    
+    //
     
   } 
   
