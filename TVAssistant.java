@@ -32,7 +32,7 @@ public class TVAssistant
   public TVAssistant()
   {
     System.out.println("Welcome to the Show Assistant 0.1\n(Type 'list' for a list of available commands)"); // print welcome message once at program startup
-    
+        
     System.out.println("\nReading Data From Show URLs:");
     
     simpleShows = readFavorites(favoritesFile); // read the file containing a list of every show to be included and its URL + add each show found to 'simpleShows'
@@ -42,10 +42,6 @@ public class TVAssistant
        show.sanitizeAndBuild();
       allShowsWithData.add(show); // add populated show to 'allShowsWithData'      
     }
-
-
-    
-    System.out.println("shows: "+ allShowsWithData); // print a list of all the shows crawled
     
    // get command from user (main menu) (loop forever until program termination)
      for (int c = 1; c > 0; c++)
@@ -63,7 +59,7 @@ public class TVAssistant
         String cmd = "";
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("$");
+        System.out.print("$ ");
         
         try
         {
@@ -177,7 +173,7 @@ public class TVAssistant
     String code = "";
     
     Show theShow = new Show("");
-    Season theSeason = new Season(-1, "");
+    Season theSeason = new Season(0, "");
     Episode theEp = new Episode("", "");
     
     // toggle Archer 3x22
@@ -220,9 +216,6 @@ public class TVAssistant
      code = theEp.epCode;
       
       
-    // toggle Archer
-    } else if (pieces.length == 2) {
-      
     } else {
       System.err.println("Invalid toggle selection.");
     }
@@ -247,7 +240,18 @@ public class TVAssistant
  while ((line = br.readLine()) != null) {
   
    if (line.startsWith(sub + ",")) {
-     String builder = sub + "," + "TRUE";
+     
+     String[] parts = line.split(",");
+     String ans = parts[1];
+     
+     if (ans.equals("TRUE")) {
+       ans = "FALSE";
+       
+     } else if (ans.equals("FALSE")) {
+       ans = "TRUE";
+     }
+     
+     String builder = sub + "," + ans;
      output += builder + "\n";
      
    } else {
@@ -341,7 +345,7 @@ public class TVAssistant
         System.out.println("Season " + ((show.seasons).get(x)).seasonNumber + ": " + (((show.seasons).get(x)).episodes).size() + " episodes");
       }
 
-
+      System.out.println((show.seasons).get(0)); // DEBUG
       
   }
   
@@ -533,6 +537,14 @@ class Show {
     }
     
     seasons.add(season); // add the last season
+    
+    try {
+      
+      if ( (seasons.get(0)).seasonNumber == 0) {
+        seasons.remove(0); // remove the 0th season
+      }
+      
+    } catch (Exception e) {}
 
   }
   
