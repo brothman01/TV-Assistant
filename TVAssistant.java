@@ -22,19 +22,14 @@ public class TVAssistant
 {
   private File favoritesFile = new File("favorites.txt"); // file containing the users favorites/preferences for what the program will search for
   
-  private DateFormat dateFormat = new SimpleDateFormat("MM.dd.yy");
-  private Date date = new Date();
-  
-  private ArrayList<Show> simpleShows = new ArrayList<Show>(); // an array containing every show with only the simple data found in the data file
-  private ArrayList<Show> allShowsWithData = new ArrayList<Show>(); // an array of every show with it's season and episode data
+  private ArrayList<Show> allShows = new ArrayList<Show>(); // an array of every show with it's season and episode data
   
   private String listOfCommands = 
-    "reminders - get reminders for unwatched/new episodes for that day (specify 'all' for unwatched episodes of every show from any date) [NOT DONE]\n"
+    "reminders - get reminders for unwatched/new episodes for that day (specify 'all' for unwatched episodes of every show) [NOT DONE]\n"
   + "list - list of commands\n"
   + "info - get info about a show\n"
   + "toggle - toggle watched of episode\n"
   + "update - update local data file with data from the web. \n"
-  + "watchedFile - populate the watched file with 'true' for every episode (remove command later)\n"
   + "random - get a random show or random episode from the specified show ('random Archer')\n"
   + "exit || quit || x || q - exit / quit";
   
@@ -43,13 +38,11 @@ public class TVAssistant
     System.out.println("Welcome to the Show Assistant 0.1\n(Type 'list' for a list of available commands)"); // print welcome message once at program startup
         
     System.out.println("\nReading Data From Show URLs:");
-    
-    simpleShows = readFavorites(favoritesFile); // read the file containing a list of every show to be included and its URL + add each show found to 'simpleShows'
-    
-    // a loop to read the info for each show in 'simpleShows' and fill that show out with season and episode data
-    for (Show show : simpleShows) { 
+        
+    // a loop to read the info for each show in 'the favorites file and fill that show out with season and episode data
+    for (Show show : readFavorites(favoritesFile)) { 
        show.sanitizeAndBuild();
-      allShowsWithData.add(show); // add populated show to 'allShowsWithData'      
+       allShows.add(show); // add populated show to 'allShows'      
     }
     
    // get command from user (main menu) (loop forever until program termination)
@@ -87,7 +80,33 @@ public class TVAssistant
     
     // get reminders about a show
     if (cmd.startsWith("reminders")) { 
-     
+      ArrayList<Episode> episodes = new ArrayList<Episode>();
+      
+      try {
+        
+      String[] allP = params.split(" ");
+    
+      for (Show show : allShows) {
+        
+        if (allP[1].equals(show.title)) {
+       
+          System.out.println("Getting reminders for " + show.title); // DEBUG
+          
+               for (Season season : show.seasons) {
+                  ArrayList<Episode> eps = season.episodes; 
+            
+                  // if episodes airdate is before or the same as the current date then add it to the 'episodes' AL TODO
+                  
+               }
+        
+        }
+        
+        System.out.println("Reminders: " + episodes + " have already aired but not been watched.");
+        
+      }
+      
+      } catch (Exception e) {}
+      
     // print out a list of commands
     } else if (cmd.startsWith("list")) {
       System.out.println(listOfCommands);
@@ -97,7 +116,7 @@ public class TVAssistant
       
       String theTitle = params.substring(5, params.length());
       
-        for (Show show : allShowsWithData) {
+        for (Show show : allShows) {
           
           if ((show.title).equals(theTitle)) {
             System.out.println("Found show '" + theTitle + "'");
@@ -113,9 +132,9 @@ public class TVAssistant
       System.out.println("\nReading Data From Show URLs:");
       
       
-      for (Show show : simpleShows) {
+      for (Show show : readFavorites(favoritesFile)) {
         show.sanitizeAndBuild(); // sanitize the content gotten from the web in the last step 
-          allShowsWithData.add(show); // add the built show to the final array for shows
+          allShows.add(show); // add the built show to the final array for shows
       }
       
     
@@ -123,7 +142,7 @@ public class TVAssistant
       System.out.println("Writing to the watched database file.");
       // populate watched
       String output = "Episode ID,watched\n";
-      for (Show show : allShowsWithData) {
+      for (Show show : allShows) {
           
         for (Season season : show.seasons)
         {
@@ -158,7 +177,7 @@ public class TVAssistant
       String theTitle = parts[1];
       String rules = "";
       
-         for (Show show : allShowsWithData) {
+         for (Show show : allShows) {
           
           if ((show.title).equals(theTitle)) {
             Episode ep = randomEpisode(show, rules);
@@ -195,7 +214,7 @@ public class TVAssistant
       String[] ePieces = inputEpisode.split("x");
       
       // get the show based on the title and test for season and episode existance.
-      for (Show show : allShowsWithData) {
+      for (Show show : allShows) {
           
         if ((show.title).equals(showTitle)) {
             theShow = show;
@@ -678,7 +697,7 @@ class Season {
 class Episode {
   public String title = ""; // title of the current episode
   public String infoURL = ""; // URL leading to in-depth info about the episode
-  public String airDate = "";
+  public Date airDate = new Date();
   public String epID = "";
   public String epCode = ""; // variable to store whether or not the episode has been seen (NEED TO PRESERVE THIS DATA THROUGH UPDATES !!)
   
@@ -717,11 +736,18 @@ class Episode {
         } else {
           temp = temp.substring(1, temp.length());
         }
-      
+
       }
       
       // translate airdate into American date format?
-      airDate = temp.trim();
+      String getDate3 = temp.trim();
+      String year = getDate3.substring(0, 2);
+      String month = getDate3.substring(5, 8);
+      String day = getDate3.substring(getDate3.length() - 2, getDate3.length());
+      
+      String string = month + "/" + day + "/" + year;
+      SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+      Date d = sdf.parse("21/12/2012");
       
     } catch (Exception e) {}
     
@@ -737,11 +763,11 @@ class Episode {
       
       } catch (Exception e) {}
     
-      // get the epcode
+      // get the epsiode ID
       String[] getCode1 = raw.split("\\.");
       epCode = getCode1[0];
         
-    // get the episode code
+    // build and set the episode code
     epCode = showCode + epCode;
     
     //
@@ -750,7 +776,9 @@ class Episode {
   
   // print the attribute data for this episode
   public String toString() {
-     return title + "~" + infoURL + "~" + airDate + "~" + epCode + "\n";
+     DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy ");
+     
+     return title + "~" + infoURL + "~" + dateFormat.format(airDate) + "~" + epCode + "\n";
   }
   
   
