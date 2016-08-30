@@ -25,7 +25,7 @@ public class TVAssistant
   private ArrayList<Show> allShows = new ArrayList<Show>(); // an array of every show with it's season and episode data
   
   private String listOfCommands = 
-    "reminders - get reminders for unwatched/new episodes for that day (specify 'all' for unwatched episodes of every show) [NOT DONE]\n"
+    "reminders - get reminders for unwatched/new episodes of a show that have aired but not been watched, (specify 'all' for reminders about every show)\n"
   + "list - list of commands\n"
   + "info - get info about a show\n"
   + "toggle - toggle watched of episode\n"
@@ -79,33 +79,61 @@ public class TVAssistant
     String params = cmd;
     
     // get reminders about a show
-    if (cmd.startsWith("reminders")) { 
-      ArrayList<Episode> episodes = new ArrayList<Episode>();
+    if (cmd.startsWith("reminders")) {
+      ArrayList<Episode> reminders = new ArrayList<Episode>();
+      String[] param = cmd.split(" ");
       
-      try {
-        
-      String[] allP = params.split(" ");
-    
-      for (Show show : allShows) {
-        
-        if (allP[1].equals(show.title)) {
-       
-          System.out.println("Getting reminders for " + show.title); // DEBUG
-          
-               for (Season season : show.seasons) {
-                  ArrayList<Episode> eps = season.episodes; 
-            
-                  // if episodes airdate is before or the same as the current date then add it to the 'episodes' AL TODO
+      if (param[1].equals("all")) {
+        // get reminders about all shows
+        System.out.println("Getting reminders for all shows");
+
+         for (Show show : allShows) {
+              
+              for (Season season : show.seasons) {
+                
+                // if episodes airdate is before or the same as the current date and the episode is unwatched then add it to the 'episodes' AL TODO
+                for (Episode ep : season.episodes) {
+                 
+                  if( (ep.airDate).before(new Date()) ) {
+                    if (ep.watched == false) {
+                      reminders.add(ep);
+                    }
+                  }
                   
-               }
+                }
+              }
+          }
         
-        }
+      } else {
+        // get remindes about a specific show
+          
+          for (Show show : allShows) {
+            
+            if (param[1].equals(show.title)) {
+              
+              System.out.println("Getting reminders for " + show.title);
+              
+              for (Season season : show.seasons) {
+                
+                // if episodes airdate is before or the same as the current date and the eoisode is unwatched then add it to the 'episodes' AL TODO
+                for (Episode ep : season.episodes) {
+                 
+                  if( (ep.airDate).before(new Date()) ) {
+                    if (ep.watched == false) {
+                      reminders.add(ep);
+                    }
+                  }
+                  
+                }
+              }
+            }
+          }
         
-        System.out.println("Reminders: " + episodes + " have already aired but not been watched.");
-        
+      
       }
       
-      } catch (Exception e) {}
+     System.out.println("Reminders: " + reminders + " have already aired but not been watched."); 
+     
       
     // print out a list of commands
     } else if (cmd.startsWith("list")) {
@@ -156,7 +184,6 @@ public class TVAssistant
         
       }
       
-      //System.out.println(output); // DEBUG
       
       try {
       File file = new File("watched.txt");
@@ -261,7 +288,7 @@ public class TVAssistant
   {
      String output = "";
 
-     try {   
+     try {
  // Construct BufferedReader from FileReader
  BufferedReader br = new BufferedReader(new FileReader(new File("watched.txt")));
  
@@ -705,6 +732,8 @@ class Episode {
   
   private boolean WRITER = false;
   
+  public boolean watched = false;
+  
   public Episode(String raw, String showCode) {
     raw_content = raw;
     
@@ -769,10 +798,42 @@ class Episode {
         
     // build and set the episode code
     epCode = showCode + epCode;
-    
-    //
-    
+
+    // get the 'watched' of this episode
+    watched = getWatched();
   } 
+  
+  private boolean getWatched() {
+    
+    try {
+      // Construct BufferedReader from FileReader
+      BufferedReader br = new BufferedReader(new FileReader(new File("watched.txt")));
+      
+      String line = null;
+      while ((line = br.readLine()) != null) {
+        
+        if (line.startsWith(epCode + ",")) {
+          
+          String[] parts = line.split(",");
+          String watched = parts[1];
+          
+          if (watched.equals("TRUE")) {
+            return true;
+            
+          } else if (watched.equals("FALSE")) {
+            return false;
+          }
+
+        }
+        
+      }
+      
+      br.close();
+    } catch (Exception e) {}
+    
+ 
+    return false;
+  }
   
   // print the attribute data for this episode
   public String toString() {
