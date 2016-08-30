@@ -13,7 +13,7 @@ The final bit of functionality the TV Assistant has is the ability to suggest a 
 
 The TV Assistant was made to be a terminal program, but it can be run from any IDE that accepts Java and has input and output streams.
 
-###2. How to run TV Assistant from the terminal
+###2. How to run TV Assistant from the Command Line
 
 	1. cd to the folder contains the TVAssistant files
 	2. $ java TVAssistant
