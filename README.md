@@ -48,6 +48,10 @@ Q. How Should a 'random' command be structured?
 A. random showname
 ie. 'random Archer'
 
+Q. How do I add a show to the TV-Assistant so that it monitors that show too?
+
+A. inside this TV-Assistant directory there is a text file called 'favorites.txt'.  Open that and add new shows with their info in the way shown in the header. DO NOT FORGET TO USE ALL OF THE PUNCTUATION AND DIVIDERS SHOWN ON THE FIRST LINE.
+
 
 
 ##Future Features:
