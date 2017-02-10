@@ -41,7 +41,7 @@ public class TVAssistant
 
     // a loop to read the info for each show in 'the favorites file and fill that show out with season and episode data
     for (Show show : readFavorites(favoritesFile)) {
-       show.sanitizeAndBuild();
+       show.formatAndBuild();
        allShows.add(show); // add populated show to 'allShows'
     }
 
@@ -161,7 +161,7 @@ public class TVAssistant
 
 
       for (Show show : readFavorites(favoritesFile)) {
-        show.sanitizeAndBuild(); // sanitize the content gotten from the web in the last step
+        show.formatAndBuild(); // sanitize the content gotten from the web in the last step
           allShows.add(show); // add the built show to the final array for shows
       }
 
