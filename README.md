@@ -1,7 +1,7 @@
 # TV Assistant
 ### By Ben Rothman
 
-
+I wrote this program for fun in college.  It does not work anymore but it was fun.
 
 ###1. What is the Show Assistant
 

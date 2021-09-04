@@ -42,7 +42,6 @@ public class Episode {
     // get the air date
     try {
       String temp = "";
-
       String[] getDate1 = raw.split("<a");
       String[] getDate2 = getDate1[0].split("-");
       temp = getDate2[1];
@@ -62,28 +61,27 @@ public class Episode {
       String year = getDate3.substring(0, 2);
       String month = getDate3.substring(5, 8);
       String day = getDate3.substring(getDate3.length() - 2, getDate3.length());
-
       String string = month + "/" + day + "/" + year;
       SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
       Date d = sdf.parse("21/12/2012");
 
     } catch (Exception e) {}
 
-       // get the epID
-       try {
-         String[] getID1 = raw.split("\\.");
-         String[] getID2 = getID1[1].split("<a");
-         String theID = getID2[0].trim();
-         theID = theID.substring(0, (theID.length() - 9));
-         theID = theID.trim();
-         theID = theID.replaceAll("-", "x");
-         epID = theID;
+      // get the epID
+      try {
+        String[] getID1 = raw.split("\\.");
+        String[] getID2 = getID1[1].split("<a");
+        String theID = getID2[0].trim();
+        theID = theID.substring(0, (theID.length() - 9));
+        theID = theID.trim();
+        theID = theID.replaceAll("-", "x");
+        epID = theID;
 
       } catch (Exception e) {}
 
-      // get the epsiode ID
-      String[] getCode1 = raw.split("\\.");
-      epCode = getCode1[0];
+    // get the epsiode ID
+    String[] getCode1 = raw.split("\\.");
+    epCode = getCode1[0];
 
     // build and set the episode code
     epCode = showCode + epCode;
@@ -95,7 +93,7 @@ public class Episode {
   private boolean getWatched() {
 
     try {
-      // Construct BufferedReader from FileReader
+      // Construct BufferedReader
       BufferedReader br = new BufferedReader(new FileReader(new File("watched.txt")));
 
       String line = null;
