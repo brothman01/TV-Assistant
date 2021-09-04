@@ -36,13 +36,12 @@ public class TVAssistant
   public TVAssistant()
   {
     System.out.println("Welcome to the Show Assistant 0.1\n(Type 'list' for a list of available commands)");
-
     System.out.println("Reading Data From Show URLs:");
 
-    // a loop to read the info for each show in 'the favorites file and fill that show out with season and episode data
+    // read the info for each show in 'favorites' file and fill that show out with season and episode data then add it to an array
     for (Show show : readFavorites(favoritesFile)) {
        show.sanitizeAndBuild();
-       allShows.add(show); // add populated show to 'allShows'
+       allShows.add(show);
     }
 
    // get command from user (main menu) (loop forever until program termination)
@@ -55,30 +54,27 @@ public class TVAssistant
 
 
   }
-  // get the user's input entered into the inputstream (magic)
+  
+  // get the user's input entered into the inputstream
   public String GetUserInput()
   {
         String cmd = "";
-
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("$ ");
 
         try
         {
           cmd = reader.readLine();
-
         } catch (Exception e) {}
-
 
         return cmd;
   }
 
-  // execute the command given by the user
+  // execute the given command
   public void execute(String cmd)
   {
     String params = cmd;
 
-    // get reminders about a show
     if (cmd.startsWith("reminders")) {
       ArrayList<Episode> reminders = new ArrayList<Episode>();
       String[] param = cmd.split(" ");
@@ -105,8 +101,6 @@ public class TVAssistant
           }
 
       } else {
-        // get remindes about a specific show
-
           for (Show show : allShows) {
 
             if (param[1].equals(show.title)) {
@@ -152,10 +146,10 @@ public class TVAssistant
           }
 
         }
-    } else if (cmd.startsWith("toggle")) { // toggle the watched of an episode
+    } else if (cmd.startsWith("toggle")) {
       toggle(cmd);
 
-    } else if (cmd.startsWith("update")) { // update local data file with data from the web
+    } else if (cmd.startsWith("update")) {
 
       System.out.println("\nReading Data From Show URLs:");
 
