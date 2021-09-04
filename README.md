@@ -3,7 +3,7 @@
 
 *I wrote this program for fun in college.  It does not work anymore but it was fun.*
 
-##1. What is the Show Assistant
+## 1. What is the Show Assistant
 
 The Show Assistant is a tracker for all the shows you watch.  There are three main functions the program performs: 1) Tracking/Reminders, 2) Keeping track of which episodes you already watched and which you have yet to watch, and 3) getting a random episode of a show to watch.  The program gets season and episode data on your favorite shows (those listed in the ’favorites.txt’ file) from the internet and tells you which days to watch each show.
 
@@ -13,12 +13,11 @@ The final bit of functionality the TV Assistant has is the ability to suggest a 
 
 The TV Assistant was made to be a terminal program, but it can be run from any IDE that accepts Java and has input and output streams.
 
-###2. How to run TV Assistant from the Command Line
+### 2. How to run TV Assistant from the Command Line
+ ### 1. cd to the folder contains the TVAssistant file.
+ ### 2. $ java TVAssistant
 
-	1. cd to the folder contains the TVAssistant files
-	2. $ java TVAssistant
-
-##3. Command Reference:
+## 3. Command Reference:
 **reminders** - Get reminders to watch episodes that have already aired but that have not been watched.<br>
 **list** - lists all of the available commands<br>
 **info** - get info on a show or list all shows tracked by the program.<br>
@@ -27,12 +26,12 @@ The TV Assistant was made to be a terminal program, but it can be run from any I
 **watchedFile** - populates the watched file with ‘true’ for every episode. (will be removed in later versions)<br>
 **random** - get a random episode of a show.<br>
 
-##4. How do the data files work
+## 4. How do the data files work
 There are two main ways that the program gets data about your favorite shows: from the local data file and from the web.  Obviously the web has more current and complete data available about each show, but the local data file allows the user to customize the program to perform whatever checks they want.
 
 If you want to add to or change the shows that this program displays info about then put the changes in this file and the program will reflect those changes.
 
-##FAQ:
+## FAQ:
 
 Q. I am trying to pass in the name of a show but the program is not finding it, what is wrong?
 
