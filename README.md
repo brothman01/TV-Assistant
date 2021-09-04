@@ -1,7 +1,7 @@
 # TV Assistant
 ### By Ben Rothman
 
-*I wrote this program for fun in college.  It does not work anymore but it was fun.*
+*I wrote this program for fun in college.  It does not work anymore but it was fun to use back then.*
 
 ## 1. What is the Show Assistant
 
@@ -50,13 +50,3 @@ ie. 'random Archer'
 Q. How do I add a show to the TV-Assistant so that it monitors that show too?
 
 A. inside this TV-Assistant directory there is a text file called 'favorites.txt'.  Open that and add new shows with their info in the way shown in the header. DO NOT FORGET TO USE ALL OF THE PUNCTUATION AND DIVIDERS SHOWN ON THE FIRST LINE.
-
-
-
-##Future Features:
-- implement ‘reminders’ command
-- recommend a show that user has never seen before
-- store database of watched shows on a server so that the ‘watched?’ of a show is editable via smartphone
-- use of the rules in the ‘rule.txt’ file in randomization
-- use of rules in randomization
-- Add a GUI
